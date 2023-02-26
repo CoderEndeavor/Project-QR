@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serifz;
+  background: #8ea7e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: #fff;
+}
+
+.container .logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container .logo-container svg {
+  width: 20px;
+  height: 25px;
+}
+
+.container p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.container {
+  background: #7286d3;
+  padding: 20px 30px;
+}
+.container a {
+  text-decoration: none;
+  color: #4e31aa;
+}
+.input-container {
+  position: relative;
+  margin: 20px 0px 40px;
+  width: 300px;
+}
+
+.container input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding: 15px 0px;
+  font-size: 16px;
+  color: #fff;
+}
+
+input:focus,
+input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.container label{
+  position: absolute;
+  top: 15px;
+  left: 0px;
+}
+
+.login-btn{
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  background: #8ea7e9;
+  border: 0;
+  padding: 10px 0px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.login-btn:active{
+  transform: scale(0.98);
+}
+
+.facebook-btn, .google-btn{
+  margin: 0px 5px;
+  padding: 8px 6px;
+  background: #8ea7e9;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 3px;
+}
+
+.facebook-btn:active{
+  transform: scale(0.95);
+}
+
+.google-btn:active{
+  transform: scale(0.95);
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.input-container label span{
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.input-container input:focus + label span{
+  color: lightblue;
+  transform: translateY(-30px);
+}
